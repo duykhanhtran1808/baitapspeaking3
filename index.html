@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Lồng Tiếng</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.3/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./kurento-utils.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="contentWrapper">
+
+
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <div class="sidebarWrapper">
+                <div class="logo">
+                    <a href="#"><img src="img/sidebar-logo.png" alt="logo"></a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#"><img src="img/sidebar-clock.png" alt="clock"></a></li>
+                        <li><a href="#"><img src="img/sidebar-student.png" alt="student"></a></li>
+                        <li><a href="#"><img src="img/sidebar-book.png" alt="book"></a></li>
+                    </ul>
+                </div>
+
+                <div class="dictionary">
+                    <a href="#"><img src="img/sidebar-dict.png" alt="dict"></a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Left sidebar  -->
+
+
+        <!-- Main content  -->
+        <div class="mainContent">
+
+            <!-- Content Wrapper  -->
+            <div class="contentWrapperInside">
+
+                <!-- Navbar on the top of page  -->
+                <div class="navbar">
+                    <div class="user">
+                        <ul>
+                            <li><a href="#"><img src="img/user-noti.png" alt="noti"></a></li>
+                            <li><a href="#"><img src="img/user-pic.png" alt="pic"></a></li>
+                            <li><a href="#">
+                                    <p>Lê Lan Anh</p>
+                                </a></li>
+                            <li><a href="#"><img src="img/user-menu.png" alt="menu"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Giáo Trình</a></li>
+                            <li><a href="#">Giáo Trình 001</a></li>
+                            <li><a href="#">Bài Tập Speaking</a></li>
+                            <li><a href="#" class="active">Lồng Tiếng</a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <!-- End of navbar  -->
+
+                <div class="line"></div>
+
+                <!-- class content  -->
+
+                <div class="classContent">
+
+                    <div class="video-container">
+                        <canvas width="300px" height="300px" id="canvas" style="border: 1px solid black;"></canvas>
+                        <video id="videoSource"></video> 
+                        <video id="videoTarget"></video>
+                        
+
+
+                        <div class="video-name">Lồng Tiếng</div>
+                        <div class="video-note">Giáo viên cần phát âm đúng khẩu hình miệng</div>
+                        <div class="video-lesson">
+                            <img src="img/bai-tap.png" alt="">
+                            <p>Dog</p>
+                        </div>
+                        <div class="video-menu">
+                            <div class="lesson-content">
+                                <div class="content">
+                                    <img src="img/noidung.png" alt="noidung">
+                                    <p>Nội dung bài học</p>
+                                </div>
+                            </div>
+                            <div class="lesson-play"><button id="btnStart"><img src="img/video-button.png"
+                                        alt="videoPlay"></button>
+                                <button id="btnStop"><img src="img/buttonStop.png" alt="videoStop"></button>
+
+                            </div>
+                            <div class="lesson-time">
+                                <p></p>
+                            </div>
+                            <div class="lesson-play-hide"></div>
+
+                            <div id="app-video"></div>
+                            <div class="lesson-library">
+
+                                <div class="content"><img src="img/thu-vien.png" alt="">
+                                    <button id="libButton">
+                                        <p>Thư viện</p>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- end of main  -->
+
+
+
+                <!-- End of class main  -->
+
+            </div>
+
+
+
+            <!-- End of class content  -->
+
+
+
+
+
+
+        </div>
+
+        <!-- End of content wrapper  -->
+        </div>
+        <!-- End of main content  -->
+    </section>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
