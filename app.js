@@ -29,8 +29,8 @@ canvas.add(rect);
 const videoSource = new fabric.Image(video, {
     left: 0,
     top: 0,
-    originX: 'center',
-    originY: 'center',
+    width: 150,
+    height: 150,
     objectCaching: false,
   });
 
