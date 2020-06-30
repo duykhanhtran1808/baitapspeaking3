@@ -147,7 +147,7 @@ navigator.mediaDevices.getUserMedia(media).then(function (mediaStreamObj) {
 
     start.addEventListener('click', function (ev) {
         video.srcObject = mediaStreamObj
-        // video.play()
+        video.play()
 
 
         canvas.add(videoSource);
